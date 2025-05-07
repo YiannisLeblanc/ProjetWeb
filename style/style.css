@@ -23,28 +23,43 @@ header, footer {
     text-align: center;
     width: auto;
     height: auto;
+    background-color: #E7F2E4;
 }
 
 header {
     padding: 50px 0 0;
-    background-color: white;
-    background-image: url("../img/landscape1.png");
-    background-size:100%;
-    background-position-y: bottom;
-    background-repeat: no-repeat;
 }
 
 header h1 {
     font-size: 50px;
 }
 
-header nav {
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: black;
-    padding: 30px;
+    background-color: #B2C6D5;
     font-size: 30px;
+    overflow: hidden;
+}
+
+nav a {
+    padding: 50px;
+    width: 100%;
+    background-color: white;
+    background-image: url("../img/casquette.png");
+    background-size: 50px;
+    transition: transform .5s linear;
+}
+
+nav a {
+    color: black;
+}
+
+nav a:hover {
+    color: red;
+    transform: scale(1.1);
+    
 }
 
 a {
@@ -52,7 +67,7 @@ a {
 }
 
 section {
-    background-color: grey;
+    background-color: #E7F2E4;
     border-radius: 10px;
     max-width: 80%;
     margin: 30px auto;
