@@ -37,29 +37,30 @@ header h1 {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     background-color: #B2C6D5;
     font-size: 30px;
-    overflow: hidden;
 }
 
 nav a {
-    padding: 50px;
     width: 100%;
+    padding: 50px;
+    color: black;
     background-color: white;
     background-image: url("../img/casquette.png");
     background-size: 50px;
-    transition: transform .5s linear;
 }
 
-nav a {
-    color: black;
+@keyframes background_img_size_increase {
+    from {
+        background-size: 50px;
+    }
+    to {
+        background-size: 60px;
+    }
 }
 
 nav a:hover {
-    color: red;
-    transform: scale(1.1);
-    
+    animation: background_img_size_increase 2s linear forwards;
 }
 
 a {
