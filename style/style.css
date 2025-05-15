@@ -26,6 +26,7 @@ header, footer {
     background-color: #E7F2E4;
 }
 
+
 header {
     padding: 50px 0 0;
 }
@@ -37,7 +38,6 @@ header h1 {
 nav {
     display: flex;
     flex-direction: row;
-    background-color: #B2C6D5;
     font-size: 30px;
 }
 
@@ -45,22 +45,34 @@ nav a {
     width: 100%;
     padding: 50px;
     color: black;
-    background-color: white;
-    background-image: url("../img/casquette.png");
     background-size: 50px;
+    position: relative;
+    display: inline-block;
+    background-color: white;
 }
 
-@keyframes background_img_size_increase {
-    from {
-        background-size: 50px;
-    }
-    to {
-        background-size: 60px;
-    }
+nav a + a {
+    border-left: black solid 1px;
 }
 
-nav a:hover {
-    animation: background_img_size_increase 2s linear forwards;
+.imgNavigation {
+    width: 75%;
+    height: auto;
+    background-size: contain;   
+    transition: transform 0.5s;
+}
+
+nav a:hover .imgNavigation {
+    transform: scale(1.5);
+}
+
+.overlayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform :translate(-50%, -50%);
+    font-size: 35px;
+    text-align: center;
 }
 
 a {
