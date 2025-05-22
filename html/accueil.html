@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>titre</title>
+        <title>Mario</title>
         <meta charset="UTF-8">
         <script src="../script/script.js"></script>
         <link href="../style/style.css" rel="stylesheet">
@@ -9,41 +9,60 @@
 </html>
 <body>
     <header>
-        <h1>Accueil</h1>
+        <h1 onclick="changerOnglet(document.getElementById('introduction'))">Accueil</h1>
 
         <nav>
-            <a href="#"><img src="../img/casquette.png" class="imgNavigation" onmouseover="imgNavigation(this)"><div class="overlayText">Personnages</div></a>
-            <a href="#"><img src="../img/casquette.png" class="imgNavigation"><div class="overlayText">Jeux</div></a>
-            <a href="#"><img src="../img/casquette.png" class="imgNavigation"><div class="overlayText">Quiz</div></a>
+            <div class="navigationOnglet" onclick="changerOnglet(document.getElementById('personnages'))"><img src="../img/casquette.png" class="imgNavigation"><div class="overlayText">Personnages</div></div>
+            <div class="navigationOnglet" onclick="changerOnglet(document.getElementById('jeux'))"><img src="../img/casquette.png" class="imgNavigation"><div class="overlayText">Jeux</div></div>
+            <div class="navigationOnglet"><img src="../img/casquette.png" class="imgNavigation"><div class="overlayText">Quiz</div></div>
         </nav>
             
     </header>   
 
-    <article>
-        <section>
-            <h2>C'est quoi ?</h2>
-            <p>Mario c'est un mode de vie, c'est l'amour de soi et de la tuyauterie.</p>
-            <img href="#">
-        </section>
-        <img src="../img/casquette.png">
-    </article>
+    <div id="introduction" class="onglet">
+        <article>
+            <section>
+                <h2>C'est quoi ?</h2>
+                <p>Mario c'est un mode de vie, c'est l'amour de soi et de la tuyauterie.</p>
+                <img href="#">
+            </section>
+            <img src="../img/casquette.png">
+        </article>
 
-    <article>
-        <img src="../img/casquette.png">
-        <section>
-            <h2>Naissance de du jeu</h2>
-            <p>Blablabla Blablabla Blablabla Blablabla</p>
-        </section>
-    </article>
+        <article>
+            <img src="../img/casquette.png">
+            <section>
+                <h2>Naissance de du jeu</h2>
+                <p>Blablabla Blablabla Blablabla Blablabla</p>
+            </section>
+        </article>
 
-    <article>
-        <section>
-            <h2>Ventes et popularité</h2>
-            <p>Blablabla Blablabla Blablabla BlablablaBlablabla Blablabla Blablabla BlablablaBlablabla</p>
-            <p>Blablabla Blablabla BlablablaBlablabla Blablabla Blablabla BlablablaBlablabla Blablabla Blablabla Blablabla</p>
-        </section>
-        <img src="../img/casquette.png">
-    </article>
+        <article>
+            <section>
+                <h2>Ventes et popularité</h2>
+                <p>Blablabla Blablabla Blablabla BlablablaBlablabla Blablabla Blablabla BlablablaBlablabla</p>
+                <p>Blablabla Blablabla BlablablaBlablabla Blablabla Blablabla BlablablaBlablabla Blablabla Blablabla Blablabla</p>
+            </section>
+            <img src="../img/casquette.png">
+        </article>
+    </div>
+
+    <div id="jeux" class="onglet">
+        <article id="jaquettes">
+            <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+        </article>
+    </div>
+
+    <div id="personnages" class="onglet">
+
+    </div>
 
     <footer>
         <p>Fait par Yiannis LEBLANC et Raphaël LAURENT</p>

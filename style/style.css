@@ -13,6 +13,7 @@ body {
         #A61319 60px);
     background-size: calc(60px/sin(65deg)) 100%;
     animation: AnimationName 2s linear infinite reverse;
+    min-height: 100vh;
 }
 
 @keyframes AnimationName {
@@ -36,7 +37,8 @@ header {
 }
 
 header h1 {
-    font-size: 1.9rem;
+    font-size: 3rem;
+    cursor: pointer;
 }
 
 nav {
@@ -45,7 +47,7 @@ nav {
     font-size: 30px;
 }
 
-nav a {
+.navigationOnglet {
     width: 100%;
     height: auto;
     color: black;
@@ -53,9 +55,10 @@ nav a {
     display: inline-block;
     border-top: black solid 1px;
     overflow: hidden;
+    cursor: pointer;
 }
 
-nav a + a {
+nav .navigationOnglet + .navigationOnglet {
     border-left: black solid 1px;
 }
 
@@ -66,7 +69,7 @@ nav a + a {
     transition: transform 0.5s;
 }
 
-nav a:hover .imgNavigation {
+nav .navigationOnglet:hover .imgNavigation {
     transform: scale(1.5);
 }
 
@@ -82,6 +85,7 @@ nav a:hover .imgNavigation {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 article {
@@ -107,4 +111,42 @@ section h2 {
     text-align: center;
 }
 
+.onglet {
+    margin: 50px;
+}
+
+#introduction {
+    visibility: visible;
+    flex-direction: column;
+}
+
+#jeux {
+    visibility: hidden;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    justify-content: center;;
+}
+
+#jaquettes {
+    background-color: transparent;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 7rem;
+}
+
+#jaquettes img {
+    width: 175px;
+    height: auto;
+    border-radius: .5rem;
+    margin: 0;
+}
+
+#jacquettes img:hover{
+    cursor: pointer;
+}
 
