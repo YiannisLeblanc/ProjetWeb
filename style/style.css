@@ -144,9 +144,11 @@ section h2 {
     height: auto;
     border-radius: .5rem;
     margin: 0;
+    transition: transform 0.7s;
 }
 
-#jacquettes img:hover{
+#jaquettes img:hover {
     cursor: pointer;
+    transform: scale(1.2) rotate(380deg);
 }
 
