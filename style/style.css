@@ -12,15 +12,15 @@ body {
         #A61319 30px, 
         #A61319 60px);
     background-size: calc(60px/sin(65deg)) 100%;
-    animation: AnimationName 2s linear infinite reverse;
+    animation: backgroundAnimation 2s linear infinite reverse;
     min-height: 100vh;
 }
 
-@keyframes AnimationName {
+@keyframes backgroundAnimation {
     0% {
       background-position: calc(60px/sin(65deg)) 0;
     }
-  }
+}
 
 
 header, footer {
@@ -37,6 +37,7 @@ header {
 }
 
 header h1 {
+    display: inline-block;
     font-size: 3rem;
     cursor: pointer;
 }
@@ -44,7 +45,7 @@ header h1 {
 nav {
     display: flex;
     flex-direction: row;
-    font-size: 30px;
+    font-size: 2.2rem;
 }
 
 .navigationOnglet {
@@ -78,7 +79,6 @@ nav .navigationOnglet:hover .imgNavigation {
     top: 50%;
     left: 50%;
     transform :translate(-50%, -50%);
-    font-size: 35px;
     text-align: center;
     font-weight: bold;
 }
@@ -122,33 +122,47 @@ section h2 {
 
 #jeux {
     visibility: hidden;
-    visibility: hidden;
     height: 0;
     margin: 0;
-    overflow: hidden;
-    justify-content: center;;
+    justify-content: center;
 }
 
 #jaquettes {
-    background-color: transparent;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 150px 150px 150px 150px;
-    grid-template-rows: auto;
     justify-content: center;
-    gap: 7rem;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10rem;    
 }
 
-#jaquettes img {
-    width: 175px;
-    height: auto;
-    border-radius: .5rem;
+.descriptionJeux_Accueil{
+    background-color: transparent;
     margin: 0;
-    transition: transform 0.7s;
+    padding: 0;
 }
 
-#jaquettes img:hover {
+
+.descriptionJeux_Accueil img {
+    position: relative;
+    height: 18rem;
+    width: auto;
+    border-radius: .5rem;
+    transition: transform 0.3s;
+    transform: scale(1.06);
+}
+
+.descriptionJeux_Accueil img:hover {
+    transform: scale(1.25) rotate(20deg);
     cursor: pointer;
-    transform: scale(1.2) rotate(380deg);
 }
 
+@keyframes sizeJaquette{
+    50%{
+        transform: scale(1.06);
+    }
+}
+
+@keyframes goodbyeJaquette {
+    100% {
+        transform: translate(0, 103.1%);
+    }
+}
