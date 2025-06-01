@@ -1,20 +1,116 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>titre</title>
-      <meta charset="UTF-8">
+        <title>Wiki Bros</title>
+        <meta charset="UTF-8">
+        <script src="../script/script.js"></script>
+        <link href="../style/style.css" rel="stylesheet">
     </head>
 </html>
 <body>
     <header>
+        <h1 onclick="changerOnglet(document.getElementById('introduction'))">Accueil</h1>
+
+        <nav>
+            <div class="navigationOnglet" onclick="changerOnglet(document.getElementById('personnages'))"><div class="overlayText">Personnages</div></div>
+            <div class="navigationOnglet" onclick="changerOnglet(document.getElementById('jeux'))"><div class="overlayText">Jeux</div></div>
+            <div class="navigationOnglet"><div class="overlayText">Quiz</div></div>
+        </nav>
             
-    </header>
+    </header>   
 
-    <section>
-        <img src="#">
-        <h1>Mario</h1>
-    </section>
+    <div id="introduction" class="onglet">
+        <article class="description">
+            <section>
+                <h2>Mario, c'est quoi ?</h2>
+                <p>Mario est une franchise emblématique de jeux vidéo développée par Nitendo</p>
+                <p>Elle met en scène Mario, un plombier italien moustachu, et ses amis.</p>
+                <p>Créé par <strong>Shigeru Miyamoto</strong>, Mario est rapidement devenu la mascotte de nitendo.</p>
+                <p> Sa franchise se décline en de nombreux jeux, surtout des jeux de plateformes, mais aussi des jeux de sports ou des jeux automobiles.</p>
+            </section>
+            <img src="../img/mario_wing.webp">
+        </article>
 
+        <article class="description">
+            <img src="../img/mario_first_bacgkround.jpg">
+            <section>
+                <h2>Naissance de la franchise</h2>
+                <p>Mario est apparu pour la première fois en 1981 dans le jeu Donkey Kong, sous le nom de Jumpman.</p>
+                <p>En 1985, Nitendo lance <i>Super Mario Bros</i> sur la NES, où Mario est le personnage principal</p>
+            </section>
+        </article>
+
+        <article class="description">
+            <section>
+                <h2>Ventes et popularité</h2>
+                <p>L'un des personnages les plus populaires et reconnaissable dans le monde, Mario a permis la vente de plus de <strong>800 millions de jeux</strong>, obtenant le titre de franchise de jeu vidéo la plus vendue de l'histoire.</p>
+                <p>Des jeux mémorables comme <i>Super Mario Bros</i>, <i>Mario Kart</i> ou <i>Super Mario Odyssey</i> sont en grande partie la raison de son grand succès.</p>
+            </section>
+            <img src="../img/coins.webp">
+        </article>
+    </div>
+
+    <div id="jeux" class="onglet">
+        <article id="jaquettes">
+            <a href="super-mario-odyssey.html" class="Jeux_Accueil">
+                <div class="shadow"></div>
+                <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            </a>
+            <a href="super-mario-galaxy.html" class="Jeux_Accueil">
+                <img src="../img/Super_Mario_Galaxy_jaquette.webp">
+            </section>
+            <a href="#" class="Jeux_Accueil">
+                <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            </section>
+            <a href="#" class="Jeux_Accueil">
+                <div class="shadow"></div>
+                <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            </section>
+            <a href="#" class="Jeux_Accueil">
+                <img src="../img/Super_Mario_Galaxy_jaquette.webp">
+            </section>
+            <a href="#" class="Jeux_Accueil">
+                <img src="../img/Super_Mario_Odyssey_jaquette.webp">
+            </section>
+        </article>
+    </div>
+
+    <div id="personnages" class="onglet">
+        <article id="cards-collection">
+            <a href="#" class="card" id="Mario">
+                <div class="card-background"><img src="../img/Mario_Emblem.png" class="card-background-img"></div>
+                <img src="../img/mario.webp" class="character">
+            </a>
+            <a class="card" id="Harmonie">
+                <div class="card-background"><img src="../img/Harmonie_Emblem.png" class="card-background-img"></div>
+                <img src="../img/rosalina.webp" class="character">
+            </a>
+            <a class="card" id="Luma">
+                <div class="card-background"><img src="../img/Harmonie_Emblem.png" class="card-background-img"></div>
+                <img src="../img/Luma.webp" class="character">
+            </a>
+            <a class="card" id="Peach">
+                <div class="card-background"><img src="../img/Peach_Emblem.png" class="card-background-img"></div>
+                <img src="../img/Peach.webp" class="character">
+            </a>
+            <a class="card" id="Bowser">
+                <div class="card-background"><img src="../img/Bowser_Emblem.png" class="card-background-img"></div>
+                <img src="../img/Bowser.webp" class="character">
+            </a>
+            <a class="card" id="Luigi">
+                <div class="card-background"><img src="../img/Luigi_Emblem.png" class="card-background-img"></div>
+                <img src="../img/Luigi.webp" class="character">
+            </a>
+            <a class="card" id="Bowser_Jr">
+                <div class="card-background"><img src="../img/Bowser_Jr._Emblem.png" class="card-background-img"></div>
+                <img src="../img/Bowser_Jr.webp" class="character">
+            </a>
+            
+            
+
+        </article>
+
+    </div>
 
     <footer>
         <p>Fait par Yiannis LEBLANC et Raphaël LAURENT</p>
