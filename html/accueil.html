@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mario</title>
+        <title>Wiki Bros</title>
         <meta charset="UTF-8">
         <script src="../script/script.js"></script>
         <link href="../style/style.css" rel="stylesheet">
@@ -12,9 +12,9 @@
         <h1 onclick="changerOnglet(document.getElementById('introduction'))">Accueil</h1>
 
         <nav>
-            <div class="navigationOnglet" onclick="changerOnglet(document.getElementById('personnages'))"><img src="../img/casquette.png" class="imgNavigation"><div class="overlayText">Personnages</div></div>
-            <div class="navigationOnglet" onclick="changerOnglet(document.getElementById('jeux'))"><img src="../img/casquette.png" class="imgNavigation"><div class="overlayText">Jeux</div></div>
-            <div class="navigationOnglet"><img src="../img/casquette.png" class="imgNavigation"><div class="overlayText">Quiz</div></div>
+            <div class="navigationOnglet" onclick="changerOnglet(document.getElementById('personnages'))"><div class="overlayText">Personnages</div></div>
+            <div class="navigationOnglet" onclick="changerOnglet(document.getElementById('jeux'))"><div class="overlayText">Jeux</div></div>
+            <div class="navigationOnglet"><div class="overlayText">Quiz</div></div>
         </nav>
             
     </header>   
@@ -49,30 +49,63 @@
 
     <div id="jeux" class="onglet">
         <article id="jaquettes">
-            <a href="accueil.html" class="descriptionJeux_Accueil">
+            <a href="super-mario-odyssey.html" class="Jeux_Accueil">
                 <div class="shadow"></div>
                 <img src="../img/Super_Mario_Odyssey_jaquette.webp" onclick="afficherDescription(this)">
             </a>
-            <section class="descriptionJeux_Accueil">
+            <a href="super-mario-galaxy.html" class="Jeux_Accueil">
                 <img src="../img/Super_Mario_Galaxy_jaquette.webp">
             </section>
-            <section class="descriptionJeux_Accueil">
+            <a href="#" class="Jeux_Accueil">
                 <img src="../img/Super_Mario_Odyssey_jaquette.webp">
             </section>
-            <section class="descriptionJeux_Accueil">
+            <a href="#" class="Jeux_Accueil">
                 <div class="shadow"></div>
                 <img src="../img/Super_Mario_Odyssey_jaquette.webp" onclick="afficherDescription(this)">
             </section>
-            <section class="descriptionJeux_Accueil">
+            <a href="#" class="Jeux_Accueil">
                 <img src="../img/Super_Mario_Galaxy_jaquette.webp">
             </section>
-            <section class="descriptionJeux_Accueil">
+            <a href="#" class="Jeux_Accueil">
                 <img src="../img/Super_Mario_Odyssey_jaquette.webp">
             </section>
         </article>
     </div>
 
     <div id="personnages" class="onglet">
+        <article id="cards-collection">
+            <a href="#" class="card" id="Mario">
+                <div class="card-background"><img src="../img/Mario_Emblem.png" class="card-background-img"></div>
+                <img src="../img/mario.webp" class="character">
+            </a>
+            <a class="card" id="Harmonie">
+                <div class="card-background"><img src="../img/Harmonie_Emblem.png" class="card-background-img"></div>
+                <img src="../img/rosalina.webp" class="character">
+            </a>
+            <a class="card" id="Luma">
+                <div class="card-background"><img src="../img/Harmonie_Emblem.png" class="card-background-img"></div>
+                <img src="../img/Luma.webp" class="character">
+            </a>
+            <a class="card" id="Peach">
+                <div class="card-background"><img src="../img/Peach_Emblem.png" class="card-background-img"></div>
+                <img src="../img/Peach.webp" class="character">
+            </a>
+            <a class="card" id="Bowser">
+                <div class="card-background"><img src="../img/Bowser_Emblem.png" class="card-background-img"></div>
+                <img src="../img/Bowser.webp" class="character">
+            </a>
+            <a class="card" id="Luigi">
+                <div class="card-background"><img src="../img/Luigi_Emblem.png" class="card-background-img"></div>
+                <img src="../img/Luigi.webp" class="character">
+            </a>
+            <a class="card" id="Bowser_Jr">
+                <div class="card-background"><img src="../img/Bowser_Jr._Emblem.png" class="card-background-img"></div>
+                <img src="../img/Bowser_Jr.webp" class="character">
+            </a>
+            
+            
+
+        </article>
 
     </div>
 
