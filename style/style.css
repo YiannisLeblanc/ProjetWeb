@@ -260,6 +260,7 @@ section h2 {
     transition: all 0.5s;
     opacity: 0;
     z-index: 1;
+    filter: drop-shadow(.9rem -1.25rem 0 #00000075);
 }
 
 .card:hover .character {
@@ -290,4 +291,40 @@ section h2 {
     position: absolute;
 }
 
+.game-header, .character-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.list-character, .list-games-character{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 3rem 5rem;
+    border: .15rem solid black;
+}
+
+.list-character > h3, .list-games-character > h3 {
+    font-size: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Back {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.Back:hover {
+    color: red;
+}
