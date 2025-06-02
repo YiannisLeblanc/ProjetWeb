@@ -101,19 +101,16 @@ a {
     color: black;
 }
 
-article {
-    margin: 30px 0;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 1rem 0;
+a:hover {
+    color: red;
 }
-section {
+
+.text-description {
     height: auto;
     max-width: 900px;
     background-color: #E7F2E4;
+    display: flex;
+    flex-direction: column;
     border-radius: .5rem;
     margin: .5rem 7rem;
     padding: 1.75rem;
@@ -123,6 +120,12 @@ section {
 .description {
     display: flex;
     align-items: center;
+    margin: 30px 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 0;
 }
 
 .description > img {
@@ -163,6 +166,8 @@ section h2 {
 }
 
 #jaquettes {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
@@ -302,9 +307,11 @@ section h2 {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    margin: 2rem 15rem;
     padding: 3rem 5rem;
+    border-radius: .5rem;
     border: .15rem solid black;
+    background-color: #E7F2E4;
 }
 
 .list-character > h3, .list-games-character > h3 {
@@ -325,6 +332,8 @@ section h2 {
     font-style: italic;
 }
 
-.Back:hover {
-    color: red;
+#apropos {
+    margin: 25vh 5rem;
+    text-align: left;
+    box-shadow: 1rem 1rem rgba(0, 0, 0, 0.363);
 }
