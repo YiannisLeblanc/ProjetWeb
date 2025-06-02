@@ -6,7 +6,7 @@ function hideQuizStart() {
 function revealQuiz(){
     let presentation = document.querySelector("#presentation");
     presentation.style.display = "none";
-    let quiz = document.querySelector("#quiz-form");
+    let quiz = document.getElementById("quiz-form");
     quiz.style.display = "initial";
 }
 
