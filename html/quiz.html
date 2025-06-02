@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="../style/style.css">
     <script type="text/javascript" src="../js/script.js"></script>
     <style>
-        #quiz-form{
-            display: none;
-        }
         #scoreDisplay{
             display: none;
         }
@@ -18,9 +15,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="game-header">
         <a class="Back" href="accueil.html">Back</a>
-        <img src="../img/dr mario - quiz.webp" alt="Dr. Mario">
+        <img src="../img/dr-mario-quiz.webp" alt="Dr. Mario">
         <h1>Quiz</h1>
     </header>
     <div class="content" id="presentation">
@@ -208,7 +205,7 @@
                 </li>
             </ol>
         </fieldset>
-        <div>
+        <div class="content">
             <input id="endQuiz" type="button" value="End" onclick="finishQuiz()">
         </div>
     </form>
