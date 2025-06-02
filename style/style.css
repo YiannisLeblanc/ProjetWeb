@@ -352,6 +352,7 @@ section h2 {
 
 #quiz-form {
     padding: 5rem 10rem;
+    display: none;
 }
 
 .quiz {
@@ -375,3 +376,6 @@ section h2 {
     list-style: none;
 }
 
+input[button] {
+    color: red;
+}
