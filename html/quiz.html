@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="../img/quiz icon.webp">
     <link rel="stylesheet" href="../style/style.css">
+    <script type="text/javascript" src="../js/script.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <img src="../img/dr mario - quiz.webp" alt="Dr. Mario">
         <h1>Quiz</h1>
     </header>
-    <section>
+    <section id="presentation">
         <p>
             Testez vos connaissances sur l'univers de Mario ! Après avoir exploré nos pages dédiées aux jeux et aux
             personnages, vous avez sans doute enrichi vos connaissances sur le monde fascinant de Mario. Pourquoi ne pas
@@ -22,15 +23,13 @@
             l'univer Mario tout en vous amusant. Êtes-vous prêt à relever le défi et à prouver que vous êtes un
             véritable expert ?
         </p>
-        <div>
-            <button type="start">Envoyer</button>
-        </div>
+        <input id="startQuiz" type= "button" value ="Start" onclick="quizStart()">
     </section>
-    <form>
+    <form id="quiz-form">
         <fieldset class="quiz">
-            <legend>Quiz sur la Green IT</legend>
+            <legend>Quiz - Super Mario</legend>
             <ol>
-                <li class="questions_style">Où se trouve Lakitu dans Super Mario 64 ?
+                <li class="QCM">Où se trouve Lakitu dans Super Mario 64 ?
                     <ul class="questions">
                         <li><input type="radio" id="q1_1" name="q1" value="a">
                             <label for="q1_1" class="btn_radio">Sur le toit du château</label>
@@ -47,7 +46,7 @@
                     </ul>
                 </li>
 
-                <li class="questions_style">Que découvre-t-on sur le toit du château dans Super Mario 64 ?
+                <li class="QCM">Que découvre-t-on sur le toit du château dans Super Mario 64 ?
                     <ul class="questions">
                         <li><input type="radio" id="q2_1" name="q2" value="a">
                             <label for="q2_1" class="btn_radio">Un tuyau vers un monde secret</label>
@@ -64,7 +63,7 @@
                     </ul>
                 </li>
 
-                <li class="questions_style">Dans quel jeu Luigi n'apparaît-il pas ?
+                <li class="QCM">Dans quel jeu Luigi n'apparaît-il pas ?
                     <ul class="questions">
                         <li><input type="radio" id="q3_1" name="q3" value="a">
                             <label for="q3_1" class="btn_radio">Super Mario World</label>
@@ -81,7 +80,7 @@
                     </ul>
                 </li>
 
-                <li class="questions_style">Quel est le tout premier jeu Mario en 3D ?
+                <li class="QCM">Quel est le tout premier jeu Mario en 3D ?
                     <ul class="questions">
                         <li><input type="radio" id="q4_1" name="q4" value="a">
                             <label for="q4_1" class="btn_radio">Super Mario 3D World</label>
@@ -98,7 +97,7 @@
                     </ul>
                 </li>
 
-                <li class="questions_style">Dans quel jeu Bowser Jr. apparaît-il ?
+                <li class="QCM">Dans quel jeu Bowser Jr. apparaît-il ?
                     <ul class="questions">
                         <li><input type="radio" id="q5_1" name="q5" value="a">
                             <label for="q5_1" class="btn_radio">Super Mario Bros.</label>
@@ -115,7 +114,7 @@
                     </ul>
                 </li>
 
-                <li class="questions_style">Quel jeu Mario introduit un système de gravité sphérique innovant ?
+                <li class="QCM">Quel jeu Mario introduit un système de gravité sphérique innovant ?
                     <ul class="questions">
                         <li><input type="radio" id="q6_1" name="q6" value="a">
                             <label for="q6_1" class="btn_radio">Super Mario Galaxy</label> <!-- Bonne réponse -->
@@ -132,7 +131,7 @@
                     </ul>
                 </li>
 
-                <li class="questions_style">Quel est le premier jeu de la série principale Super Mario ?
+                <li class="QCM">Quel est le premier jeu de la série principale Super Mario ?
                     <ul class="questions">
                         <li><input type="radio" id="q7_1" name="q7" value="a">
                             <label for="q7_1" class="btn_radio">Donkey Kong</label>
@@ -149,7 +148,7 @@
                     </ul>
                 </li>
 
-                <li class="questions_style">Dans quel jeu Yoshi apparaît-il pour la première fois ?
+                <li class="QCM">Dans quel jeu Yoshi apparaît-il pour la première fois ?
                     <ul class="questions">
                         <li><input type="radio" id="q8_1" name="q8" value="a">
                             <label for="q8_1" class="btn_radio">Super Mario World</label> <!-- Bonne réponse -->
@@ -166,7 +165,7 @@
                     </ul>
                 </li>
 
-                <li class="questions_style">Quel est le nom de famille de Mario et Luigi ?
+                <li class="QCM">Quel est le nom de famille de Mario et Luigi ?
                     <ul class="questions">
                         <li><input type="radio" id="q9_1" name="q9" value="a">
                             <label for="q9_1" class="btn_radio">Miyamoto</label>
@@ -183,7 +182,7 @@
                     </ul>
                 </li>
 
-                <li class="questions_style">Dans lequel de ces jeux Luigi n'est-il pas jouable ?
+                <li class="QCM">Dans lequel de ces jeux Luigi n'est-il pas jouable ?
                     <ul class="questions">
                         <li><input type="radio" id="q10_1" name="q10" value="a">
                             <label for="q10_1" class="btn_radio">Super Mario Odyssey</label> <!-- Bonne réponse -->
