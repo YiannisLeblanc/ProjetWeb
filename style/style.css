@@ -111,8 +111,9 @@ a:hover {
     background-color: #E7F2E4;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-radius: .5rem;
-    margin: .5rem 7rem;
+    margin: .5rem 7rem 2rem 7rem;
     padding: 1.75rem;
     font-size: 1rem;
 }
@@ -302,6 +303,10 @@ section h2 {
     align-items: center;
 }
 
+.game-header > img, .character-header > img {
+    height: 15rem;
+}
+
 .list-character, .list-games-character{
     display: flex;
     flex-direction: row;
@@ -312,6 +317,7 @@ section h2 {
     border-radius: .5rem;
     border: .15rem solid black;
     background-color: #E7F2E4;
+    height: 3rem;
 }
 
 .list-character > h3, .list-games-character > h3 {
@@ -322,6 +328,12 @@ section h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.text-description > img {
+    border-radius: .5rem;
+    max-width: 25rem;
+    margin: 0;
 }
 
 .Back {
