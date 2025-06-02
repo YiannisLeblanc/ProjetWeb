@@ -349,3 +349,19 @@ section h2 {
     text-align: left;
     box-shadow: 1rem 1rem rgba(0, 0, 0, 0.363);
 }
+
+.quizz > ol{
+    color: pink;
+}
+
+.questions_style {
+    background-color: #E7F2E4;
+    border-radius: .5rem;
+    margin: 1rem;
+    padding: 1.5rem;
+}
+
+.questions {
+    list-style: none;
+}
+
