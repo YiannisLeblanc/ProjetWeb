@@ -7,6 +7,11 @@
     <link rel="icon" href="../img/quiz icon.webp">
     <link rel="stylesheet" href="../style/style.css">
     <script type="text/javascript" src="../js/script.js"></script>
+    <style>
+        #scoreDisplay{
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,8 +42,8 @@
                         <li><input type="radio" id="q1_2" name="q1" value="b">
                             <label for="q1_2" class="btn_radio">À côté de Peach dans la cinématique d'intro</label>
                         </li>
-                        <li><input type="radio" id="q1_3" name="q1" value="c">
-                            <label for="q1_3" class="btn_radio">Derrière la caméra</label> <!-- Bonne réponse -->
+                        <li><input type="radio" id="q1_3" name="q1" value="c" result="true">
+                            <label for="q1_3" class="btn_radio">Derrière la caméra</label>
                         </li>
                         <li><input type="radio" id="q1_4" name="q1" value="d">
                             <label for="q1_4" class="btn_radio">Dans une salle cachée du château</label>
@@ -51,8 +56,8 @@
                         <li><input type="radio" id="q2_1" name="q2" value="a">
                             <label for="q2_1" class="btn_radio">Un tuyau vers un monde secret</label>
                         </li>
-                        <li><input type="radio" id="q2_2" name="q2" value="b">
-                            <label for="q2_2" class="btn_radio">Yoshi</label> <!-- Bonne réponse -->
+                        <li><input type="radio" id="q2_2" name="q2" value="b" result="true">
+                            <label for="q2_2" class="btn_radio">Yoshi</label>
                         </li>
                         <li><input type="radio" id="q2_3" name="q2" value="c">
                             <label for="q2_3" class="btn_radio">Un drapeau de victoire</label>
@@ -74,8 +79,8 @@
                         <li><input type="radio" id="q3_3" name="q3" value="c">
                             <label for="q3_3" class="btn_radio">Super Mario Bros. 64</label>
                         </li>
-                        <li><input type="radio" id="q3_4" name="q3" value="d">
-                            <label for="q3_4" class="btn_radio">Super Mario Sunshine</label> <!-- Bonne réponse -->
+                        <li><input type="radio" id="q3_4" name="q3" value="d" result="true">
+                            <label for="q3_4" class="btn_radio">Super Mario Sunshine</label>
                         </li>
                     </ul>
                 </li>
@@ -91,8 +96,8 @@
                         <li><input type="radio" id="q4_3" name="q4" value="c">
                             <label for="q4_3" class="btn_radio">Super Mario Galaxy</label>
                         </li>
-                        <li><input type="radio" id="q4_4" name="q4" value="d">
-                            <label for="q4_4" class="btn_radio">Super Mario 64</label> <!-- Bonne réponse -->
+                        <li><input type="radio" id="q4_4" name="q4" value="d" result="true">
+                            <label for="q4_4" class="btn_radio">Super Mario 64</label>
                         </li>
                     </ul>
                 </li>
@@ -105,8 +110,8 @@
                         <li><input type="radio" id="q5_2" name="q5" value="b">
                             <label for="q5_2" class="btn_radio">Super Mario Galaxy</label>
                         </li>
-                        <li><input type="radio" id="q5_3" name="q5" value="c">
-                            <label for="q5_3" class="btn_radio">Super Mario Sunshine</label> <!-- Bonne réponse -->
+                        <li><input type="radio" id="q5_3" name="q5" value="c" result="true">
+                            <label for="q5_3" class="btn_radio">Super Mario Sunshine</label>
                         </li>
                         <li><input type="radio" id="q5_4" name="q5" value="d">
                             <label for="q5_4" class="btn_radio">Super Mario 64</label>
@@ -116,8 +121,8 @@
 
                 <li class="QCM">Quel jeu Mario introduit un système de gravité sphérique innovant ?
                     <ul class="questions">
-                        <li><input type="radio" id="q6_1" name="q6" value="a">
-                            <label for="q6_1" class="btn_radio">Super Mario Galaxy</label> <!-- Bonne réponse -->
+                        <li><input type="radio" id="q6_1" name="q6" value="a" result="true">
+                            <label for="q6_1" class="btn_radio">Super Mario Galaxy</label>
                         </li>
                         <li><input type="radio" id="q6_2" name="q6" value="b">
                             <label for="q6_2" class="btn_radio">Super Mario Sunshine</label>
@@ -136,8 +141,8 @@
                         <li><input type="radio" id="q7_1" name="q7" value="a">
                             <label for="q7_1" class="btn_radio">Super Mario Galaxy</label>
                         </li>
-                        <li><input type="radio" id="q7_2" name="q7" value="b">
-                            <label for="q7_2" class="btn_radio">Super Mario Bros.</label> <!-- Bonne réponse -->
+                        <li><input type="radio" id="q7_2" name="q7" value="b" result="true">
+                            <label for="q7_2" class="btn_radio">Super Mario Bros.</label>
                         </li>
                         <li><input type="radio" id="q7_3" name="q7" value="c">
                             <label for="q7_3" class="btn_radio">Super Mario 64</label>
@@ -150,8 +155,8 @@
 
                 <li class="QCM">Dans quel jeu Yoshi apparaît-il pour la première fois ?
                     <ul class="questions">
-                        <li><input type="radio" id="q8_1" name="q8" value="a">
-                            <label for="q8_1" class="btn_radio">Super Mario World</label> <!-- Bonne réponse -->
+                        <li><input type="radio" id="q8_1" name="q8" value="a" result="true">
+                            <label for="q8_1" class="btn_radio">Super Mario World</label>
                         </li>
                         <li><input type="radio" id="q8_2" name="q8" value="b">
                             <label for="q8_2" class="btn_radio">Super Mario 64</label>
@@ -173,8 +178,8 @@
                         <li><input type="radio" id="q9_2" name="q9" value="b">
                             <label for="q9_2" class="btn_radio">Toadstool</label>
                         </li>
-                        <li><input type="radio" id="q9_3" name="q9" value="c">
-                            <label for="q9_3" class="btn_radio">Mario</label> <!-- Bonne réponse -->
+                        <li><input type="radio" id="q9_3" name="q9" value="c" result="true">
+                            <label for="q9_3" class="btn_radio">Mario</label>
                         </li>
                         <li><input type="radio" id="q9_4" name="q9" value="d">
                             <label for="q9_4" class="btn_radio">Bros</label>
@@ -184,8 +189,8 @@
 
                 <li class="QCM">Dans lequel de ces jeux Luigi n'est-il pas jouable ?
                     <ul class="questions">
-                        <li><input type="radio" id="q10_1" name="q10" value="a">
-                            <label for="q10_1" class="btn_radio">Super Mario Odyssey</label> <!-- Bonne réponse -->
+                        <li><input type="radio" id="q10_1" name="q10" value="a" result="true">
+                            <label for="q10_1" class="btn_radio">Super Mario Odyssey</label>
                         </li>
                         <li><input type="radio" id="q10_2" name="q10" value="b">
                             <label for="q10_2" class="btn_radio">Super Mario Bros.</label>
@@ -201,9 +206,13 @@
             </ol>
         </fieldset>
         <div class="content">
-            <button type="submit">Envoyer</button>
+            <input id="endQuiz" type="button" value="End" onclick="finishQuiz()">
         </div>
     </form>
+    <div id="scoreDisplay">
+        <p>Votre score est : <span id="score">0</span>/<span id="total">0</span>.</p>
+        <p id="score-comment"></p>
+    </div>
 </body>
 
 </html>
