@@ -376,6 +376,15 @@ section h2 {
     list-style: none;
 }
 
-input[button] {
-    color: red;
+button, input[type=button] {
+    width: 10rem;
+    height: 3rem;
+    background-color: #0000004b;
+    border-radius: .5rem;
+    border: .15rem solid #c0c0c0;
+    transition: transform 0.3s ease-out;
+}
+
+button:hover, input[type=button]:hover {
+    transform: scale(1.3);
 }
