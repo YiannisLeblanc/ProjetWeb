@@ -10,7 +10,6 @@ function revealQuiz(){
     quiz.style.display = "initial";
 }
 
-hideQuizStart();
 
 function quizStart() {
     alert("Le quiz va commencer !");
