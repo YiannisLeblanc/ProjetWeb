@@ -350,14 +350,24 @@ section h2 {
     box-shadow: 1rem 1rem rgba(0, 0, 0, 0.363);
 }
 
-.quizz > ol{
-    color: pink;
+#quiz-form {
+    padding: 5rem 10rem;
 }
 
-.questions_style {
+.quiz {
+    list-style: inside;
+    align-items: center;
+    padding: 0 4rem;
     background-color: #E7F2E4;
-    border-radius: .5rem;
-    margin: 1rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.QCM:nth-child(-n + 9) {
+    border-bottom: .15rem solid black;
+}
+
+.QCM {
     padding: 1.5rem;
 }
 
